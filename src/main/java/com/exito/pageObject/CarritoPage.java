@@ -9,6 +9,18 @@ public class CarritoPage extends PageObject {
     private final By btnCarrito = By.xpath("//*[@class='exito-header-3-x-minicartLink']");
     private final By txtCorreo = By.xpath("//input[@name='email']");
     private final By btnCorreo = By.xpath("//button[@class='exito-checkout-io-0-x-preLoginActiveButton']");
+    private final By txtSeleccion = By.xpath("(//span[@class='vtex-store-components-3-x-productBrand '])[1]");
+
+    private final By txtComparacion =By.xpath("//span[contains(@data-molecule-product-detail-name-span, 'true')]");
+
+    public By getTxtComparacion() {
+        return txtComparacion;
+    }
+
+    public By getTxtSeleccion() {
+        return txtSeleccion;
+    }
+
     public By getTxtCorreo() {
         return txtCorreo;
     }

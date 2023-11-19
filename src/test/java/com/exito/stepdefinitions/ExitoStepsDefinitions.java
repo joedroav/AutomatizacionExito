@@ -24,6 +24,7 @@ public class ExitoStepsDefinitions {
     @Cuando("el usuario selecciona el producto")
     public void elUsuarioSeleccionaElProducto() {
 
+
     }
     @Cuando("de clic en el boton agregar al carrito de compras")
     public void deClicEnElBotonAgregarAlCarritoDeCompras() {
@@ -34,5 +35,6 @@ public class ExitoStepsDefinitions {
         carritoSteps.abreElCarrito();
         carritoSteps.ingresaCorreo();
         carritoSteps.clicBotonPreRegistro();
+        carritoSteps.verificaProductoSeleccionado();
     }
 }
