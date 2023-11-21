@@ -1,17 +1,19 @@
 package com.exito.steps;
 
+import com.exito.models.ProductModel;
 import com.exito.pageObject.CarritoPage;
 import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.annotation.Page;
 import org.junit.jupiter.api.Assertions;
 
 public class CarritoSteps {
-    String contenido="";
     @Page
     CarritoPage carritoPage;
+    ProductModel productModel = new ProductModel();
     @Step("Selecciona el producto")
     public void seleccionaProducto(){
-        contenido = carritoPage.getDriver().findElement(carritoPage.getTxtSeleccion()).getText();
+        productModel.setNameProduct(carritoPage.getDriver().findElement(carritoPage.getTxtSeleccion()).getText());
+        //contenido = carritoPage.getDriver().findElement(carritoPage.getTxtSeleccion()).getText();
         carritoPage.getDriver().findElement(carritoPage.getBtnAgregarProducto()).click();
     }
     @Step("Va al carrito de compras")
@@ -29,8 +31,8 @@ public class CarritoSteps {
     @Step("Verifica producto")
     public void verificaProductoSeleccionado(){
         // Utilizando assertEquals
-        String textoEncontrado="";
-        textoEncontrado=carritoPage.getDriver().findElement(carritoPage.getTxtComparacion()).getText();
-        Assertions.assertEquals(contenido, textoEncontrado, "Los productos seleccionados no son iguales!!");
+        //String textoEncontrado="";
+        String textoEncontrado=carritoPage.getDriver().findElement(carritoPage.getTxtComparacion()).getText();
+        Assertions.assertEquals(productModel.getNameProduct(), textoEncontrado, "Los productos seleccionados no son iguales!!");
     }
 }

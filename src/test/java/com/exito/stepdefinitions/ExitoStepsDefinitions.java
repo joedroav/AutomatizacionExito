@@ -23,18 +23,17 @@ public class ExitoStepsDefinitions {
     }
     @Cuando("el usuario selecciona el producto")
     public void elUsuarioSeleccionaElProducto() {
-
+        carritoSteps.seleccionaProducto();
 
     }
     @Cuando("de clic en el boton agregar al carrito de compras")
     public void deClicEnElBotonAgregarAlCarritoDeCompras() {
-        carritoSteps.seleccionaProducto();
-    }
-    @Entonces("el usuario podra visaulizar el producto agregado")
-    public void elUsuarioPodraVisaulizarElProductoAgregado() {
         carritoSteps.abreElCarrito();
         carritoSteps.ingresaCorreo();
         carritoSteps.clicBotonPreRegistro();
+    }
+    @Entonces("el usuario podra visaulizar el producto agregado")
+    public void elUsuarioPodraVisaulizarElProductoAgregado() {
         carritoSteps.verificaProductoSeleccionado();
     }
 }

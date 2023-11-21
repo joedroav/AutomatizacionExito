@@ -20,7 +20,6 @@ public class ExitoPage extends PageObject {
     public By getBtnPublicidad() {
         return btnPublicidad;
     }
-
     public By getBtnConsolas() {
         return btnConsolas;
     }

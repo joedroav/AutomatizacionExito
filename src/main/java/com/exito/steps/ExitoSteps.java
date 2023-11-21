@@ -30,9 +30,8 @@ public class ExitoSteps {
     @Step("Extiende SubCategorias")
     public void extenderSubcategoria() {
         // Usar Duration.ofSeconds para crear un objeto de tipo Duration
-        WebDriverWait wait = new WebDriverWait(exitoPage.getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOf(exitoPage.getDriver().findElement(exitoPage.getBtnSubCategoria())));
-
+        //WebDriverWait wait = new WebDriverWait(exitoPage.getDriver(), Duration.ofSeconds(10));
+        //wait.until(ExpectedConditions.visibilityOf(exitoPage.getDriver().findElement(exitoPage.getBtnSubCategoria())));
         Actions actions = new Actions(exitoPage.getDriver());
         actions.moveToElement(exitoPage.getDriver().findElement(exitoPage.getBtnSubCategoria())).perform();
     }

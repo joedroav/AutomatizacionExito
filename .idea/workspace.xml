@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c932aac8-1dc3-4bf1-a057-cd595e82445d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exito/pageObject/ExitoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exito/pageObject/ExitoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exito/steps/CarritoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/CarritoSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exito/steps/ExitoSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/ExitoSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/exito/stepdefinitions/ExitoStepsDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exito/stepdefinitions/ExitoStepsDefinitions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
